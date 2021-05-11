@@ -19,6 +19,13 @@ class AlmostThereViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func letsGoButtonOnPress(_ sender: Any) {
+        let st = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "LoggedInTabViewController")
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
