@@ -7,17 +7,20 @@
 
 import UIKit
 
-class LogInViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+class LogInViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var fbBtn: UIButton!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var nextBtn: UIButton!
     
+    let vm = LogInViewModel.init()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         emailTextField.delegate = self
+        passwordTextField.delegate = self
         
         fbBtn.roundedButtons()
         nextBtn.roundedButtons()
@@ -35,4 +38,15 @@ class LogInViewController: UIViewController, UITextFieldDelegate, UITextViewDele
         navigationController?.popViewController(animated: true)
     }
 
+    @IBAction func logInButtonOnPress(_ sender: Any) {
+        let st = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "LoggedInTabViewController")
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+        
+        vm.setLogInUserDefault()
+    }
+    
+    
+    
 }

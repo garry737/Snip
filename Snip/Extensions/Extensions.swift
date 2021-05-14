@@ -27,3 +27,12 @@ extension UITextField {
         self.layer.addSublayer(bottomLine)
     }
 }
+
+//MARK:- UIImageView extension methods
+extension UIImageView {
+    func makeImageCircle() {
+        self.layer.masksToBounds = false
+        self.layer.cornerRadius = self.frame.width / 2.6
+        self.clipsToBounds = true
+    }
+}

@@ -6,3 +6,19 @@
 //
 
 import Foundation
+
+protocol SignInViewModelProtocol {
+    func moveToHomeView()
+}
+
+class SignInViewModel {
+    var delegate: SignInViewModelProtocol?
+    
+    func checkIfLoggedIn() {
+        if LogInHelper.shared.checkLoggedIn() {
+            delegate?.moveToHomeView()
+        }
+    }
+    
+    
+}

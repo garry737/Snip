@@ -8,6 +8,8 @@
 import UIKit
 
 class AlmostThereViewController: UIViewController {
+    
+    let vm = RegisterViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,8 @@ class AlmostThereViewController: UIViewController {
         let vc = st.instantiateViewController(withIdentifier: "LoggedInTabViewController")
         vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true, completion: nil)
+        
+        vm.setLogInUserDefault()
     }
     
     /*

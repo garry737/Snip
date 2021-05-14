@@ -8,6 +8,8 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    
+    let vm = ProfileViewModel.init()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,7 +17,15 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func logOutButtonOnPress(_ sender: Any) {
+        let st = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "SignInViewController")
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
 
+        vm.setLogOutUserDefault()
+    }
+    
     /*
     // MARK: - Navigation
 

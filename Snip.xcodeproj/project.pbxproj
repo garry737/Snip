@@ -16,6 +16,12 @@
 		4B162CA7264AC808008E8732 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B162CA6264AC808008E8732 /* RegisterViewModel.swift */; };
 		4B162CAC264AC829008E8732 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B162CAB264AC829008E8732 /* UserModel.swift */; };
 		4B162CB1264AC837008E8732 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B162CB0264AC837008E8732 /* PostModel.swift */; };
+		4B6E500C264C4664004607B8 /* HomeSearchBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E500B264C4664004607B8 /* HomeSearchBarView.xib */; };
+		4B6E5012264C49DA004607B8 /* HomeSearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E5011264C49DA004607B8 /* HomeSearchBarView.swift */; };
+		4B6E5030264C7905004607B8 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E502E264C7905004607B8 /* PostTableViewCell.swift */; };
+		4B6E5031264C7905004607B8 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E502F264C7905004607B8 /* PostTableViewCell.xib */; };
+		4B6E504F264D917D004607B8 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E504E264D917D004607B8 /* ProfileViewModel.swift */; };
+		4B6E5054264D967D004607B8 /* LogInHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E5053264D967D004607B8 /* LogInHelper.swift */; };
 		4B8740AF26352AF300102884 /* HowOldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8740AE26352AF300102884 /* HowOldViewController.swift */; };
 		4B8740B926353A2A00102884 /* ProficiencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8740B826353A2A00102884 /* ProficiencyViewController.swift */; };
 		4B8740C126353CF000102884 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8740C026353CF000102884 /* FavoritesViewController.swift */; };
@@ -63,6 +69,12 @@
 		4B162CA6264AC808008E8732 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		4B162CAB264AC829008E8732 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4B162CB0264AC837008E8732 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		4B6E500B264C4664004607B8 /* HomeSearchBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSearchBarView.xib; sourceTree = "<group>"; };
+		4B6E5011264C49DA004607B8 /* HomeSearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSearchBarView.swift; sourceTree = "<group>"; };
+		4B6E502E264C7905004607B8 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		4B6E502F264C7905004607B8 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		4B6E504E264D917D004607B8 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		4B6E5053264D967D004607B8 /* LogInHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInHelper.swift; sourceTree = "<group>"; };
 		4B8740AE26352AF300102884 /* HowOldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowOldViewController.swift; sourceTree = "<group>"; };
 		4B8740B826353A2A00102884 /* ProficiencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProficiencyViewController.swift; sourceTree = "<group>"; };
 		4B8740C026353CF000102884 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +149,7 @@
 		4B162C652649DCA1008E8732 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4B6E5010264C49B1004607B8 /* View Files */,
 				4B162C662649DCB4008E8732 /* View Controllers */,
 				4B162C682649DCCB008E8732 /* Storyboards */,
 				4B162C672649DCBE008E8732 /* XIBs */,
@@ -159,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				4B162C762649DE77008E8732 /* TableViewCells */,
+				4B6E500B264C4664004607B8 /* HomeSearchBarView.xib */,
+				4B6E5011264C49DA004607B8 /* HomeSearchBarView.swift */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -267,6 +282,8 @@
 		4B162C762649DE77008E8732 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				4B6E502F264C7905004607B8 /* PostTableViewCell.xib */,
+				4B6E502E264C7905004607B8 /* PostTableViewCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -289,6 +306,7 @@
 		4B162C7C2649DEEE008E8732 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4B6E5053264D967D004607B8 /* LogInHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -346,6 +364,7 @@
 		4B162C99264AC79C008E8732 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				4B6E504E264D917D004607B8 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -370,6 +389,13 @@
 				4BA04B4726333AD70004F51F /* LogInViewController.swift */,
 			);
 			path = "Log In";
+			sourceTree = "<group>";
+		};
+		4B6E5010264C49B1004607B8 /* View Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Files";
 			sourceTree = "<group>";
 		};
 		4BA04B03263339CE0004F51F = {
@@ -560,7 +586,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BA04B1C263339D30004F51F /* LaunchScreen.storyboard in Resources */,
+				4B6E500C264C4664004607B8 /* HomeSearchBarView.xib in Resources */,
 				4BA04B19263339D30004F51F /* Assets.xcassets in Resources */,
+				4B6E5031264C7905004607B8 /* PostTableViewCell.xib in Resources */,
 				4BA04B17263339CF0004F51F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -702,11 +730,15 @@
 				4BA04B662633697A0004F51F /* ProfileViewController.swift in Sources */,
 				4BA04B5C2633696A0004F51F /* ShareViewController.swift in Sources */,
 				4BA04B52263369560004F51F /* HomeViewController.swift in Sources */,
+				4B6E5030264C7905004607B8 /* PostTableViewCell.swift in Sources */,
 				4B162C7E2649DF09008E8732 /* Extensions.swift in Sources */,
+				4B6E504F264D917D004607B8 /* ProfileViewModel.swift in Sources */,
 				4B8740AF26352AF300102884 /* HowOldViewController.swift in Sources */,
+				4B6E5012264C49DA004607B8 /* HomeSearchBarView.swift in Sources */,
 				4B8740C626353E8000102884 /* AlmostThereViewController.swift in Sources */,
 				4B162CAC264AC829008E8732 /* UserModel.swift in Sources */,
 				4BA04B61263369710004F51F /* SavedViewController.swift in Sources */,
+				4B6E5054264D967D004607B8 /* LogInHelper.swift in Sources */,
 				4BA04B12263339CF0004F51F /* SceneDelegate.swift in Sources */,
 				4B162CA2264AC7F8008E8732 /* LogInViewModel.swift in Sources */,
 			);
@@ -886,13 +918,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q62B8UULH4;
+				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = Snip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = personal.gf.Snip;
+				PRODUCT_BUNDLE_IDENTIFIER = com.garry.dev.snip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -906,13 +938,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q62B8UULH4;
+				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = Snip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = personal.gf.Snip;
+				PRODUCT_BUNDLE_IDENTIFIER = com.garry.dev.snip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

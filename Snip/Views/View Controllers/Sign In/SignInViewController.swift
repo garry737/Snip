@@ -12,10 +12,15 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var signUpBtn: UIButton!
     @IBOutlet weak var loginBtn: UIButton!
     
+    let vm = SignInViewModel.init()
+    
     var arrrName : [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        vm.delegate = self
+        
         signUpBtn.roundedButtons()
         loginBtn.roundedButtons()
         loginBtn.layer.borderColor = CGColor(gray: 0.7, alpha: 1)
@@ -23,15 +28,17 @@ class SignInViewController: UIViewController {
         
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        vm.checkIfLoggedIn()
     }
-    */
 
+}
+
+extension SignInViewController: SignInViewModelProtocol {
+    func moveToHomeView() {
+        let st = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc = st.instantiateViewController(withIdentifier: "LoggedInTabViewController")
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true, completion: nil)
+    }
 }

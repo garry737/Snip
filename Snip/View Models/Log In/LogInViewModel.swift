@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class LogInViewModel {
+    func setLogInUserDefault() {
+        LogInHelper.shared.setLogInUserDefault()
+    }
+}
