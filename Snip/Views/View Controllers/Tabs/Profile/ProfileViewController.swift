@@ -11,10 +11,27 @@ class ProfileViewController: UIViewController {
     
     let vm = ProfileViewModel.init()
 
+    @IBOutlet weak var profilePictureImageView: UIImageView!
+    @IBOutlet weak var activityRadioButton: RadioButton!
+    @IBOutlet weak var favoriteRadioButton: RadioButton!
+    @IBOutlet weak var profileSubView: UIView!
+    @IBOutlet weak var profileAlternateSubView: ProfileFavoritesView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        profilePictureImageView.makeImageCircle(rad: 2)
+        activityRadioButton.isSelected = true
+        favoriteRadioButton.isSelected = false
+        
+        profileSubView.isHidden = false
+        profileAlternateSubView.isHidden = true
+        
+        activityRadioButton?.alternateButtons = [favoriteRadioButton!]
+        favoriteRadioButton?.alternateButtons = [activityRadioButton!]
+        
     }
     
     @IBAction func logOutButtonOnPress(_ sender: Any) {
@@ -26,14 +43,15 @@ class ProfileViewController: UIViewController {
         vm.setLogOutUserDefault()
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func activityRadioButtonOnPress(_ sender: RadioButton) {
+        profileSubView.isHidden = false
+        profileAlternateSubView.isHidden = true
     }
-    */
+    
+    @IBAction func favoriteRadioButtonOnPress(_ sender: RadioButton) {
+        profileSubView.isHidden = true
+        profileAlternateSubView.isHidden = false
+    }
+    
 
 }

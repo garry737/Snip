@@ -30,9 +30,9 @@ extension UITextField {
 
 //MARK:- UIImageView extension methods
 extension UIImageView {
-    func makeImageCircle() {
+    func makeImageCircle(rad: Float) {
         self.layer.masksToBounds = false
-        self.layer.cornerRadius = self.frame.width / 2.6
+        self.layer.cornerRadius = CGFloat(self.frame.width / CGFloat(rad))
         self.clipsToBounds = true
     }
 }

@@ -22,6 +22,13 @@
 		4B6E5031264C7905004607B8 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E502F264C7905004607B8 /* PostTableViewCell.xib */; };
 		4B6E504F264D917D004607B8 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E504E264D917D004607B8 /* ProfileViewModel.swift */; };
 		4B6E5054264D967D004607B8 /* LogInHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E5053264D967D004607B8 /* LogInHelper.swift */; };
+		4B6E5067264EEEA5004607B8 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E5066264EEEA5004607B8 /* RadioButton.swift */; };
+		4B6E5079264F0E30004607B8 /* ProfileFavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E5078264F0E30004607B8 /* ProfileFavoritesView.swift */; };
+		4B6E5081264F0E48004607B8 /* ProfileFavoritesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E5080264F0E48004607B8 /* ProfileFavoritesView.xib */; };
+		4B6E5086264F0E94004607B8 /* ProfileActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E5085264F0E94004607B8 /* ProfileActivityView.swift */; };
+		4B6E508B264F0EA9004607B8 /* ProfileActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E508A264F0EA9004607B8 /* ProfileActivityView.xib */; };
+		4B6E509D264F2785004607B8 /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6E509B264F2785004607B8 /* FavoriteCollectionViewCell.swift */; };
+		4B6E509E264F2785004607B8 /* FavoriteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B6E509C264F2785004607B8 /* FavoriteCollectionViewCell.xib */; };
 		4B8740AF26352AF300102884 /* HowOldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8740AE26352AF300102884 /* HowOldViewController.swift */; };
 		4B8740B926353A2A00102884 /* ProficiencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8740B826353A2A00102884 /* ProficiencyViewController.swift */; };
 		4B8740C126353CF000102884 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8740C026353CF000102884 /* FavoritesViewController.swift */; };
@@ -75,6 +82,14 @@
 		4B6E502F264C7905004607B8 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		4B6E504E264D917D004607B8 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		4B6E5053264D967D004607B8 /* LogInHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInHelper.swift; sourceTree = "<group>"; };
+		4B6E5066264EEEA5004607B8 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		4B6E5078264F0E30004607B8 /* ProfileFavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFavoritesView.swift; sourceTree = "<group>"; };
+		4B6E5080264F0E48004607B8 /* ProfileFavoritesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileFavoritesView.xib; sourceTree = "<group>"; };
+		4B6E5085264F0E94004607B8 /* ProfileActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActivityView.swift; sourceTree = "<group>"; };
+		4B6E508A264F0EA9004607B8 /* ProfileActivityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileActivityView.xib; sourceTree = "<group>"; };
+		4B6E509B264F2785004607B8 /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		4B6E509C264F2785004607B8 /* FavoriteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteCollectionViewCell.xib; sourceTree = "<group>"; };
+		4B6E50BC2652D171004607B8 /* Snip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Snip.entitlements; sourceTree = "<group>"; };
 		4B8740AE26352AF300102884 /* HowOldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowOldViewController.swift; sourceTree = "<group>"; };
 		4B8740B826353A2A00102884 /* ProficiencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProficiencyViewController.swift; sourceTree = "<group>"; };
 		4B8740C026353CF000102884 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
@@ -171,9 +186,14 @@
 		4B162C672649DCBE008E8732 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				4B6E5092264F273C004607B8 /* CollectionViewCells */,
 				4B162C762649DE77008E8732 /* TableViewCells */,
 				4B6E500B264C4664004607B8 /* HomeSearchBarView.xib */,
 				4B6E5011264C49DA004607B8 /* HomeSearchBarView.swift */,
+				4B6E5080264F0E48004607B8 /* ProfileFavoritesView.xib */,
+				4B6E5078264F0E30004607B8 /* ProfileFavoritesView.swift */,
+				4B6E508A264F0EA9004607B8 /* ProfileActivityView.xib */,
+				4B6E5085264F0E94004607B8 /* ProfileActivityView.swift */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -292,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				4B162C7D2649DF09008E8732 /* Extensions.swift */,
+				4B6E5066264EEEA5004607B8 /* RadioButton.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -398,6 +419,15 @@
 			path = "View Files";
 			sourceTree = "<group>";
 		};
+		4B6E5092264F273C004607B8 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				4B6E509C264F2785004607B8 /* FavoriteCollectionViewCell.xib */,
+				4B6E509B264F2785004607B8 /* FavoriteCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		4BA04B03263339CE0004F51F = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +453,7 @@
 		4BA04B0E263339CF0004F51F /* Snip */ = {
 			isa = PBXGroup;
 			children = (
+				4B6E50BC2652D171004607B8 /* Snip.entitlements */,
 				4B162C642649DC9A008E8732 /* Models */,
 				4B162C652649DCA1008E8732 /* Views */,
 				4B162C6A2649DCF7008E8732 /* View Models */,
@@ -585,10 +616,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B6E508B264F0EA9004607B8 /* ProfileActivityView.xib in Resources */,
 				4BA04B1C263339D30004F51F /* LaunchScreen.storyboard in Resources */,
 				4B6E500C264C4664004607B8 /* HomeSearchBarView.xib in Resources */,
 				4BA04B19263339D30004F51F /* Assets.xcassets in Resources */,
 				4B6E5031264C7905004607B8 /* PostTableViewCell.xib in Resources */,
+				4B6E5081264F0E48004607B8 /* ProfileFavoritesView.xib in Resources */,
+				4B6E509E264F2785004607B8 /* FavoriteCollectionViewCell.xib in Resources */,
 				4BA04B17263339CF0004F51F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -721,10 +755,12 @@
 				4B162CB1264AC837008E8732 /* PostModel.swift in Sources */,
 				4B8740C126353CF000102884 /* FavoritesViewController.swift in Sources */,
 				4B8740B926353A2A00102884 /* ProficiencyViewController.swift in Sources */,
+				4B6E509D264F2785004607B8 /* FavoriteCollectionViewCell.swift in Sources */,
 				4BA04B10263339CF0004F51F /* AppDelegate.swift in Sources */,
 				4B162C9D264AC7E8008E8732 /* SignInViewModel.swift in Sources */,
 				4BA04B4D26333AE20004F51F /* RegisterViewController.swift in Sources */,
 				4BA04B57263369600004F51F /* ExploreViewController.swift in Sources */,
+				4B6E5079264F0E30004607B8 /* ProfileFavoritesView.swift in Sources */,
 				4B162CA7264AC808008E8732 /* RegisterViewModel.swift in Sources */,
 				4BA04B4826333AD70004F51F /* LogInViewController.swift in Sources */,
 				4BA04B662633697A0004F51F /* ProfileViewController.swift in Sources */,
@@ -734,11 +770,13 @@
 				4B162C7E2649DF09008E8732 /* Extensions.swift in Sources */,
 				4B6E504F264D917D004607B8 /* ProfileViewModel.swift in Sources */,
 				4B8740AF26352AF300102884 /* HowOldViewController.swift in Sources */,
+				4B6E5086264F0E94004607B8 /* ProfileActivityView.swift in Sources */,
 				4B6E5012264C49DA004607B8 /* HomeSearchBarView.swift in Sources */,
 				4B8740C626353E8000102884 /* AlmostThereViewController.swift in Sources */,
 				4B162CAC264AC829008E8732 /* UserModel.swift in Sources */,
 				4BA04B61263369710004F51F /* SavedViewController.swift in Sources */,
 				4B6E5054264D967D004607B8 /* LogInHelper.swift in Sources */,
+				4B6E5067264EEEA5004607B8 /* RadioButton.swift in Sources */,
 				4BA04B12263339CF0004F51F /* SceneDelegate.swift in Sources */,
 				4B162CA2264AC7F8008E8732 /* LogInViewModel.swift in Sources */,
 			);
@@ -917,6 +955,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Snip/Snip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = Snip/Info.plist;
@@ -937,6 +976,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Snip/Snip.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = Snip/Info.plist;

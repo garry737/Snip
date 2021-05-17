@@ -13,7 +13,7 @@ class PostTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        profilePpictureImage.makeImageCircle()
+        profilePpictureImage.makeImageCircle(rad: 2.5)
         // Initialization code
     }
 
